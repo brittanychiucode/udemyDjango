@@ -6,6 +6,8 @@ from . import views
 #   /challenges/january => 
 
 urlpatterns = [
+    path("", views.index), # /challenges
     path("secret_month", views.secret_month),
-    path("<month>", views.monthly_challenges),
+    path("<int:month>", views.monthly_challenge_by_number),
+    path("<str:month>", views.monthly_challenge, name="month-challenge"),
 ]
