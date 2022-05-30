@@ -1,0 +1,8 @@
+/* 
+    1. add static folder here like templates
+    2. check 'django.contrib.staticfiles' is in INSTALLED_APPS in Django settings
+    3. check STATIC_URL is set to /static/; This tells which url django should serve static. for deployment
+*/
+ul {
+    list-style: none;
+}
